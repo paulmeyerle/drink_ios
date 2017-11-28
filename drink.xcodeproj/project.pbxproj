@@ -14,6 +14,13 @@
 		12A604621FCCE605001448D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A604601FCCE605001448D9 /* LaunchScreen.storyboard */; };
 		12A6046D1FCCE605001448D9 /* drinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A6046C1FCCE605001448D9 /* drinkTests.swift */; };
 		12A604781FCCE605001448D9 /* drinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604771FCCE605001448D9 /* drinkUITests.swift */; };
+		12A604881FCCEBE8001448D9 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 12A604861FCCEBE7001448D9 /* Services */; };
+		12A604891FCCEBE8001448D9 /* Coordinators in Resources */ = {isa = PBXBuildFile; fileRef = 12A604871FCCEBE7001448D9 /* Coordinators */; };
+		12A6048E1FCCEE28001448D9 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 12A6048A1FCCEE28001448D9 /* Views */; };
+		12A6048F1FCCEE28001448D9 /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = 12A6048B1FCCEE28001448D9 /* ViewControllers */; };
+		12A604901FCCEE28001448D9 /* ViewModels in Resources */ = {isa = PBXBuildFile; fileRef = 12A6048C1FCCEE28001448D9 /* ViewModels */; };
+		12A604911FCCEE28001448D9 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 12A6048D1FCCEE28001448D9 /* Models */; };
+		12A604931FCCEE4E001448D9 /* Rx in Resources */ = {isa = PBXBuildFile; fileRef = 12A604921FCCEE4D001448D9 /* Rx */; };
 		1ED418E74BD6286FCED6D1F5 /* Pods_drinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE05449682BFC076D4911EEA /* Pods_drinkTests.framework */; };
 		6FB8F0BA0D39E50BA08413DD /* Pods_drinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C2B5A99F30F18ADD139DFB /* Pods_drinkUITests.framework */; };
 		C5981C8B928AA2E8DCE770B7 /* Pods_drink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D89D41A8180C09A900A2E1 /* Pods_drink.framework */; };
@@ -50,6 +57,13 @@
 		12A604731FCCE605001448D9 /* drinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A604771FCCE605001448D9 /* drinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkUITests.swift; sourceTree = "<group>"; };
 		12A604791FCCE605001448D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A604861FCCEBE7001448D9 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
+		12A604871FCCEBE7001448D9 /* Coordinators */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Coordinators; sourceTree = "<group>"; };
+		12A6048A1FCCEE28001448D9 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		12A6048B1FCCEE28001448D9 /* ViewControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewControllers; sourceTree = "<group>"; };
+		12A6048C1FCCEE28001448D9 /* ViewModels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModels; sourceTree = "<group>"; };
+		12A6048D1FCCEE28001448D9 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		12A604921FCCEE4D001448D9 /* Rx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Rx; sourceTree = "<group>"; };
 		148F45AC72D4472DDBDC17F0 /* Pods-drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-drink/Pods-drink.debug.xcconfig"; sourceTree = "<group>"; };
 		35F208CF0EDE1CE159A796B3 /* Pods-drinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drinkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-drinkTests/Pods-drinkTests.release.xcconfig"; sourceTree = "<group>"; };
 		A13A93808B5C348C9CA8CF27 /* Pods-drink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drink.release.xcconfig"; path = "Pods/Target Support Files/Pods-drink/Pods-drink.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,11 +129,18 @@
 			isa = PBXGroup;
 			children = (
 				12A604571FCCE605001448D9 /* AppDelegate.swift */,
-				12A604591FCCE605001448D9 /* ViewController.swift */,
-				12A6045B1FCCE605001448D9 /* Main.storyboard */,
 				12A6045E1FCCE605001448D9 /* Assets.xcassets */,
-				12A604601FCCE605001448D9 /* LaunchScreen.storyboard */,
+				12A604871FCCEBE7001448D9 /* Coordinators */,
 				12A604631FCCE605001448D9 /* Info.plist */,
+				12A604601FCCE605001448D9 /* LaunchScreen.storyboard */,
+				12A6045B1FCCE605001448D9 /* Main.storyboard */,
+				12A6048D1FCCEE28001448D9 /* Models */,
+				12A604921FCCEE4D001448D9 /* Rx */,
+				12A604861FCCEBE7001448D9 /* Services */,
+				12A604591FCCE605001448D9 /* ViewController.swift */,
+				12A6048B1FCCEE28001448D9 /* ViewControllers */,
+				12A6048C1FCCEE28001448D9 /* ViewModels */,
+				12A6048A1FCCEE28001448D9 /* Views */,
 			);
 			path = drink;
 			sourceTree = "<group>";
@@ -281,7 +302,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A604931FCCEE4E001448D9 /* Rx in Resources */,
+				12A604881FCCEBE8001448D9 /* Services in Resources */,
+				12A604901FCCEE28001448D9 /* ViewModels in Resources */,
 				12A604621FCCE605001448D9 /* LaunchScreen.storyboard in Resources */,
+				12A604911FCCEE28001448D9 /* Models in Resources */,
+				12A604891FCCEBE8001448D9 /* Coordinators in Resources */,
+				12A6048F1FCCEE28001448D9 /* ViewControllers in Resources */,
+				12A6048E1FCCEE28001448D9 /* Views in Resources */,
 				12A6045F1FCCE605001448D9 /* Assets.xcassets in Resources */,
 				12A6045D1FCCE605001448D9 /* Main.storyboard in Resources */,
 			);
@@ -310,13 +338,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drinkUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8FE95A9B81956A5F9C510C39 /* [CP] Embed Pods Frameworks */ = {
@@ -340,13 +371,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drink-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		99FDADE893E26A909F3A4300 /* [CP] Copy Pods Resources */ = {
@@ -370,9 +404,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-drinkUITests/Pods-drinkUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,13 +430,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drinkTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF91CDF98A81D02583EDCF31 /* [CP] Embed Pods Frameworks */ = {
@@ -400,9 +448,36 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-drink/Pods-drink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
