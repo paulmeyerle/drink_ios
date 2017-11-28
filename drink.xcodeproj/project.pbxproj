@@ -106,6 +106,7 @@
 		128DEF5A1FCD039C007A8DE9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				12E2FC7E1FCCF813004107F1 /* UIViewController+Rx.swift */,
 				128DEF5B1FCD03B1007A8DE9 /* UIViewController+SceneType.swift */,
 			);
 			path = Categories;
@@ -142,7 +143,6 @@
 				12E2FC731FCCF7AC004107F1 /* Coordinators */,
 				12A604631FCCE605001448D9 /* Info.plist */,
 				12E2FC7C1FCCF7E2004107F1 /* Models */,
-				12E2FC7D1FCCF7F6004107F1 /* Rx */,
 				12E2FC801FCCF81E004107F1 /* Services */,
 				12E2FC871FCCF89C004107F1 /* ViewControllers */,
 				12E2FC881FCCF8A8004107F1 /* ViewModels */,
@@ -185,14 +185,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		12E2FC7D1FCCF7F6004107F1 /* Rx */ = {
-			isa = PBXGroup;
-			children = (
-				12E2FC7E1FCCF813004107F1 /* UIViewController+Rx.swift */,
-			);
-			path = Rx;
 			sourceTree = "<group>";
 		};
 		12E2FC801FCCF81E004107F1 /* Services */ = {
