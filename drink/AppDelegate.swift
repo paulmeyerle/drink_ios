@@ -12,29 +12,29 @@ import Then
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+
         let drinkService = MoyaProvider<DrinkService>()
-        
+
         let networkProvider = NetworkProvider(drinkService: drinkService)
-        
+
         let navigationController = UINavigationController().then {
             $0.navigationBar.isTranslucent = false
         }
-        
+
         let sceneCoordinator = SceneCoordinator(navigationController: navigationController, networkProvider: networkProvider)
-        
+
         window = UIWindow().then {
             $0.backgroundColor = UIColor.white
             $0.rootViewController = navigationController
             $0.makeKeyAndVisible()
         }
-        
+
         sceneCoordinator.start()
-        
+
         return true
     }
 

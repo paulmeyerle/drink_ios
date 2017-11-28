@@ -33,7 +33,7 @@ extension DrinkService: TargetType {
             return .get
         }
     }
-    
+
     var task: Task {
         switch self {
         case .searchDrinks(let query):

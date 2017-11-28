@@ -20,7 +20,7 @@ struct SceneCoordinator: SceneCoordinatorType {
     public func transition(scene: SceneType, type: SceneTransitionType) {
         // first we need to get the view controller
         let viewController = UIViewController.from(scene: scene)
-        
+
         switch type {
         case .root:
             navigationController.viewControllers = [viewController]
