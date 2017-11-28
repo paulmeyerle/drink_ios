@@ -1,9 +1,9 @@
 //
-//  PMNetworkingType.swift
-//  mvvm
+//  NetworkProviderType.swift
+//  drink
 //
-//  Created by Paul Meyerle on 11/25/17.
-//  Copyright © 2017 Jetsetter. All rights reserved.
+//  Created by Paul Meyerle on 11/27/17.
+//  Copyright © 2017 Paul Meyerle. All rights reserved.
 //
 
 import Foundation
