@@ -7,22 +7,20 @@
 //
 
 import UIKit
-import Then
-import Moya
 
-class SceneCoordinator: SceneCoordinatorType {
+struct SceneCoordinator: SceneCoordinatorType {
     let navigationController: UINavigationController
-    let networking: NetworkProvider
+    let networkProvider: NetworkProvider
 
-    init(navigationController: UINavigationController, networking: NetworkProvider) {
+    init(navigationController: UINavigationController, networkProvider: NetworkProvider) {
         self.navigationController = navigationController
-        self.networking = networking
+        self.networkProvider = networkProvider
     }
 
     public func transition(scene: SceneType, type: SceneTransitionType) {
         // first we need to get the view controller
-        let viewController = buildViewController(scene: scene)
-
+        let viewController = UIViewController.from(scene: scene)
+        
         switch type {
         case .root:
             navigationController.viewControllers = [viewController]
@@ -36,12 +34,12 @@ class SceneCoordinator: SceneCoordinatorType {
     }
 
     public func pop() {
-        guard let currentViewController = navigationController.visibleViewController else {
+        guard let visibleViewController = navigationController.visibleViewController else {
             return
         }
 
-        if let presenter = currentViewController.presentingViewController {
-            presenter.dismiss(animated: true, completion: {
+        if let presentingViewController = visibleViewController.presentingViewController {
+            presentingViewController.dismiss(animated: true, completion: {
                 // completion
             })
         } else {
@@ -49,17 +47,8 @@ class SceneCoordinator: SceneCoordinatorType {
         }
     }
 
-    private func buildViewController(scene: SceneType) -> UIViewController {
-        switch scene {
-//        case .addTodo(let viewModel):
-//            return AddTodoItemViewController(viewModel: viewModel)
-//        case .viewTodos(let viewModel):
-//            return TodoListViewController(viewModel: viewModel)
-        }
-    }
-
     public func start() {
-        let viewModel = TodoListViewModel(networking: networking, sceneCoordinator: self)
-        transition(scene: SceneType.viewTodos(viewModel: viewModel), type: .root)
+        transition(scene: SceneType.test, type: .root)
+        transition(scene: SceneType.test, type: .push)
     }
 }

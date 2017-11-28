@@ -6,8 +6,8 @@
 //  Copyright © 2017 Jetsetter. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum SceneType {
-//    case viewTodos(viewModel: TodoListViewModelType)
+    case test
 }

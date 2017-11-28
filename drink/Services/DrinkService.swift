@@ -13,7 +13,7 @@ import Moya
 
 enum DrinkService {
     case searchDrinks(query: String)
-}
+}
 
 extension DrinkService: TargetType {
     var baseURL: URL {
@@ -33,18 +33,11 @@ extension DrinkService: TargetType {
             return .get
         }
     }
-
-    var parameters: [String: Any]? {
+    
+    var task: Task {
         switch self {
         case .searchDrinks(let query):
-            return ["query": query]
-        }
-    }
-
-    var parameterEncoding: ParameterEncoding {
-        switch self {
-        case .searchDrinks:
-            return URLEncoding.default
+            return .requestParameters(parameters: ["query": query], encoding: URLEncoding.queryString)
         }
     }
 
@@ -56,10 +49,7 @@ extension DrinkService: TargetType {
         }
     }
 
-    var task: Task {
-        switch self {
-        case .searchDrinks:
-            return .request
-        }
+    var headers: [String : String]? {
+        return ["Content-type": "application/json"]
     }
 }

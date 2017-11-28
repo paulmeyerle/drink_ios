@@ -13,15 +13,16 @@ import Moya
 import Moya_ModelMapper
 
 struct NetworkProvider: NetworkProviderType {
-    private let drinkService: RxMoyaProvider<DrinkService>
+    private let drinkService: MoyaProvider<DrinkService>
 
-    init(drinkService: RxMoyaProvider<DrinkService>) {
+    init(drinkService: MoyaProvider<DrinkService>) {
         self.drinkService = drinkService
     }
 
     func searchDrinks(query: String) -> Observable<Void> {
-        return drinkService.request(.searchDrinks(query: query))
-            .retry(3)
-            .map { _ in }
+        return Observable.just(Void())
+//        return drinkService.rx.request(.searchDrinks(query: query))
+//            .retry(3)
+//            .map { _ in }
     }
 }
