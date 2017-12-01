@@ -11,3 +11,12 @@ import UIKit
 enum SceneType {
     case test
 }
+
+extension SceneType {
+    var viewController: UIViewController {
+        switch self {
+        case .test:
+            return TestViewController()
+        }
+    }
+}

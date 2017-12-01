@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		128DEF5C1FCD03B1007A8DE9 /* UIViewController+SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128DEF5B1FCD03B1007A8DE9 /* UIViewController+SceneType.swift */; };
 		12A604581FCCE605001448D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604571FCCE605001448D9 /* AppDelegate.swift */; };
 		12A6045A1FCCE605001448D9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604591FCCE605001448D9 /* TestViewController.swift */; };
 		12A6045F1FCCE605001448D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A6045E1FCCE605001448D9 /* Assets.xcassets */; };
@@ -44,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		128DEF5B1FCD03B1007A8DE9 /* UIViewController+SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SceneType.swift"; sourceTree = "<group>"; };
 		12A604541FCCE605001448D9 /* drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A604571FCCE605001448D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A604591FCCE605001448D9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				12E2FC7E1FCCF813004107F1 /* UIViewController+Rx.swift */,
-				128DEF5B1FCD03B1007A8DE9 /* UIViewController+SceneType.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -576,7 +573,6 @@
 				12E2FC7A1FCCF7C7004107F1 /* SceneTransitionType.swift in Sources */,
 				12E2FC781FCCF7C7004107F1 /* SceneCoordinatorType.swift in Sources */,
 				12E2FC841FCCF833004107F1 /* DrinkService.swift in Sources */,
-				128DEF5C1FCD03B1007A8DE9 /* UIViewController+SceneType.swift in Sources */,
 				12E2FC7F1FCCF813004107F1 /* UIViewController+Rx.swift in Sources */,
 				12E2FC861FCCF833004107F1 /* NetworkProviderType.swift in Sources */,
 			);

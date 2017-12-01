@@ -18,16 +18,13 @@ struct SceneCoordinator: SceneCoordinatorType {
     }
 
     public func transition(scene: SceneType, type: SceneTransitionType) {
-        // first we need to get the view controller
-        let viewController = UIViewController.from(scene: scene)
-
         switch type {
         case .root:
-            navigationController.viewControllers = [viewController]
+            navigationController.viewControllers = [scene.viewController]
         case .push:
-            navigationController.pushViewController(viewController, animated: true)
+            navigationController.pushViewController(scene.viewController, animated: true)
         case .modal:
-            navigationController.present(viewController, animated: true, completion: {
+            navigationController.present(scene.viewController, animated: true, completion: {
                 // completion
             })
         }
