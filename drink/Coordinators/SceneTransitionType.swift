@@ -9,7 +9,12 @@
 import Foundation
 
 enum SceneTransitionType {
+    /// override the application root view controller
     case root
+    
+    /// present a modal view controller from the currently visible controller
     case modal
+    
+    // push the view controller onto the navigation stack
     case push
 }

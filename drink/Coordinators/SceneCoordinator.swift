@@ -10,9 +10,9 @@ import UIKit
 
 struct SceneCoordinator: SceneCoordinatorType {
     let navigationController: UINavigationController
-    let networkProvider: NetworkProvider
+    let networkProvider: NetworkProviderType
 
-    init(navigationController: UINavigationController, networkProvider: NetworkProvider) {
+    init(navigationController: UINavigationController, networkProvider: NetworkProviderType) {
         self.navigationController = navigationController
         self.networkProvider = networkProvider
     }
@@ -45,7 +45,7 @@ struct SceneCoordinator: SceneCoordinatorType {
     }
 
     public func start() {
-        transition(scene: SceneType.test, type: .root)
-        transition(scene: SceneType.test, type: .push)
+        let testViewModel = TestViewModel()
+        transition(scene: SceneType.test(viewModel: testViewModel), type: .root)
     }
 }

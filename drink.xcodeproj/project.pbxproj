@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A11FAB202002AA007DD3DE /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A11FAA202002AA007DD3DE /* TestViewModel.swift */; };
 		12A604581FCCE605001448D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604571FCCE605001448D9 /* AppDelegate.swift */; };
 		12A6045A1FCCE605001448D9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604591FCCE605001448D9 /* TestViewController.swift */; };
 		12A6045F1FCCE605001448D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A6045E1FCCE605001448D9 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12A11FAA202002AA007DD3DE /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 		12A604541FCCE605001448D9 /* drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A604571FCCE605001448D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A604591FCCE605001448D9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		12E2FC881FCCF8A8004107F1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				12A11FAA202002AA007DD3DE /* TestViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				12A6045A1FCCE605001448D9 /* TestViewController.swift in Sources */,
 				12A604581FCCE605001448D9 /* AppDelegate.swift in Sources */,
 				12E2FC851FCCF833004107F1 /* NetworkProvider.swift in Sources */,
+				12A11FAB202002AA007DD3DE /* TestViewModel.swift in Sources */,
 				12E2FC791FCCF7C7004107F1 /* SceneType.swift in Sources */,
 				12E2FC7B1FCCF7C7004107F1 /* SceneCoordinator.swift in Sources */,
 				12E2FC7A1FCCF7C7004107F1 /* SceneTransitionType.swift in Sources */,

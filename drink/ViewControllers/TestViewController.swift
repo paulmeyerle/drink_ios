@@ -7,11 +7,26 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import Then
+import SnapKit
 
 class TestViewController: UIViewController {
+    
+    private let viewModel: TestViewModel
+    
+    private let searchInput = UITextField().then {
+        $0.backgroundColor = .purple
+    }
 
-    init() {
+    init(viewModel: TestViewModel) {
+        self.viewModel = viewModel
+        
         super.init(nibName: nil, bundle: nil)
+        
+        setupBindings()
+        setupLayout()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -29,6 +44,19 @@ class TestViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func setupBindings() {
+        
+    }
+    
+    private func setupLayout() {
+        view.addSubview(searchInput)
+        searchInput.snp.makeConstraints { maker in
+            maker.top.left.right.equalToSuperview()
+                .inset(15)
+            maker.height.equalTo(50)
+        }
     }
 
 }
