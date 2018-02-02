@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 
 struct CheckInListViewModel {
-    init() {
+    init(networkProvider: NetworkProviderType) {
         
     }
 }

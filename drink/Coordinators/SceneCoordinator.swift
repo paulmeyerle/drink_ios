@@ -45,7 +45,7 @@ struct SceneCoordinator: SceneCoordinatorType {
     }
 
     public func start() {
-        let homeViewModel = HomeViewModel()
+        let homeViewModel = HomeViewModel(networkProvider: networkProvider)
         transition(scene: SceneType.home(viewModel: homeViewModel), type: .root)
     }
 }

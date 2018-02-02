@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 
 struct SearchViewModel {
-    init() {
+    init(networkProvider: NetworkProviderType) {
 
     }
 }
