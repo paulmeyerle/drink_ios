@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12A11FAB202002AA007DD3DE /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A11FAA202002AA007DD3DE /* TestViewModel.swift */; };
+		126669852024BFF600E40F56 /* CheckInListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126669842024BFF600E40F56 /* CheckInListViewController.swift */; };
+		126669872024C07B00E40F56 /* CheckInListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126669862024C07B00E40F56 /* CheckInListViewModel.swift */; };
+		126669892024C0E400E40F56 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126669882024C0E400E40F56 /* SearchViewController.swift */; };
+		1266698B2024C10500E40F56 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266698A2024C10500E40F56 /* SearchViewModel.swift */; };
+		12A11FAB202002AA007DD3DE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A11FAA202002AA007DD3DE /* HomeViewModel.swift */; };
 		12A604581FCCE605001448D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604571FCCE605001448D9 /* AppDelegate.swift */; };
-		12A6045A1FCCE605001448D9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604591FCCE605001448D9 /* TestViewController.swift */; };
+		12A6045A1FCCE605001448D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604591FCCE605001448D9 /* HomeViewController.swift */; };
 		12A6045F1FCCE605001448D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A6045E1FCCE605001448D9 /* Assets.xcassets */; };
 		12A6046D1FCCE605001448D9 /* drinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A6046C1FCCE605001448D9 /* drinkTests.swift */; };
 		12A604781FCCE605001448D9 /* drinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A604771FCCE605001448D9 /* drinkUITests.swift */; };
@@ -44,10 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12A11FAA202002AA007DD3DE /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		126669842024BFF600E40F56 /* CheckInListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInListViewController.swift; sourceTree = "<group>"; };
+		126669862024C07B00E40F56 /* CheckInListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInListViewModel.swift; sourceTree = "<group>"; };
+		126669882024C0E400E40F56 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1266698A2024C10500E40F56 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		12A11FAA202002AA007DD3DE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		12A604541FCCE605001448D9 /* drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A604571FCCE605001448D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12A604591FCCE605001448D9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		12A604591FCCE605001448D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		12A6045E1FCCE605001448D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A604631FCCE605001448D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A604681FCCE605001448D9 /* drinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,7 +207,9 @@
 		12E2FC871FCCF89C004107F1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				12A604591FCCE605001448D9 /* TestViewController.swift */,
+				12A604591FCCE605001448D9 /* HomeViewController.swift */,
+				126669842024BFF600E40F56 /* CheckInListViewController.swift */,
+				126669882024C0E400E40F56 /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -207,7 +217,9 @@
 		12E2FC881FCCF8A8004107F1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				12A11FAA202002AA007DD3DE /* TestViewModel.swift */,
+				12A11FAA202002AA007DD3DE /* HomeViewModel.swift */,
+				126669862024C07B00E40F56 /* CheckInListViewModel.swift */,
+				1266698A2024C10500E40F56 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -568,16 +580,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A6045A1FCCE605001448D9 /* TestViewController.swift in Sources */,
+				126669872024C07B00E40F56 /* CheckInListViewModel.swift in Sources */,
+				12A6045A1FCCE605001448D9 /* HomeViewController.swift in Sources */,
 				12A604581FCCE605001448D9 /* AppDelegate.swift in Sources */,
 				12E2FC851FCCF833004107F1 /* NetworkProvider.swift in Sources */,
-				12A11FAB202002AA007DD3DE /* TestViewModel.swift in Sources */,
+				12A11FAB202002AA007DD3DE /* HomeViewModel.swift in Sources */,
 				12E2FC791FCCF7C7004107F1 /* SceneType.swift in Sources */,
+				1266698B2024C10500E40F56 /* SearchViewModel.swift in Sources */,
 				12E2FC7B1FCCF7C7004107F1 /* SceneCoordinator.swift in Sources */,
 				12E2FC7A1FCCF7C7004107F1 /* SceneTransitionType.swift in Sources */,
+				126669892024C0E400E40F56 /* SearchViewController.swift in Sources */,
 				12E2FC781FCCF7C7004107F1 /* SceneCoordinatorType.swift in Sources */,
 				12E2FC841FCCF833004107F1 /* DrinkService.swift in Sources */,
 				12E2FC7F1FCCF813004107F1 /* UIViewController+Rx.swift in Sources */,
+				126669852024BFF600E40F56 /* CheckInListViewController.swift in Sources */,
 				12E2FC861FCCF833004107F1 /* NetworkProviderType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

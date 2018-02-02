@@ -9,14 +9,14 @@
 import UIKit
 
 enum SceneType {
-    case test(viewModel: TestViewModel)
+    case home(viewModel: HomeViewModel)
 }
 
 extension SceneType {
     var viewController: UIViewController {
         switch self {
-        case .test(let viewModel):
-            return TestViewController(viewModel: viewModel)
+        case .home(let viewModel):
+            return HomeViewController(viewModel: viewModel)
         }
     }
 }
